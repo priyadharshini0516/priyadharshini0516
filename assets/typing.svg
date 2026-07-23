@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 45" width="100%" height="45" style="background:transparent;">
+  <defs>
+    <!-- Importing a clean sans-serif/monospace font -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&amp;display=swap');
+      .typing-text {
+        font-family: 'Fira Code', 'Courier New', Courier, monospace;
+        font-size: 20px;
+        fill: #00E5FF;
+        font-weight: 700;
+        opacity: 0;
+      }
+    </style>
+  </defs>
+
+  <!-- Role 1 -->
+  <text x="10" y="30" class="typing-text">
+    ⚡ Generative AI Engineer
+    <animate attributeName="opacity" values="0;1;1;0;0;0;0;0" keyTimes="0;0.05;0.12;0.14;0.15;0.99;1" dur="18s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" values="0 15; 0 0; 0 0; 0 -15; 0 -15; 0 -15; 0 -15; 0 15" keyTimes="0;0.05;0.12;0.14;0.15;0.98;0.99;1" dur="18s" repeatCount="indefinite" />
+  </text>
+
+  <!-- Role 2 -->
+  <text x="10" y="30" class="typing-text">
+    ⚡ Full Stack Developer
+    <animate attributeName="opacity" values="0;0;1;1;0;0;0;0" keyTimes="0;0.14;0.19;0.26;0.28;0.29;0.99;1" dur="18s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" values="0 15; 0 15; 0 0; 0 0; 0 -15; 0 -15; 0 -15; 0 15" keyTimes="0;0.14;0.19;0.26;0.28;0.29;0.99;1" dur="18s" repeatCount="indefinite" />
+  </text>
+
+  <!-- Role 3 -->
+  <text x="10" y="30" class="typing-text">
+    ⚡ Building AI Products
+    <animate attributeName="opacity" values="0;0;0;1;1;0;0;0" keyTimes="0;0.28;0.33;0.40;0.42;0.43;0.99;1" dur="18s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" values="0 15; 0 15; 0 15; 0 0; 0 0; 0 -15; 0 -15; 0 15" keyTimes="0;0.28;0.33;0.40;0.42;0.43;0.99;1" dur="18s" repeatCount="indefinite" />
+  </text>
+
+  <!-- Role 4 -->
+  <text x="10" y="30" class="typing-text">
+    ⚡ RAG Developer
+    <animate attributeName="opacity" values="0;0;0;0;1;1;0;0" keyTimes="0;0.42;0.47;0.54;0.56;0.57;0.99;1" dur="18s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" values="0 15; 0 15; 0 15; 0 15; 0 0; 0 0; 0 -15; 0 15" keyTimes="0;0.42;0.47;0.54;0.56;0.57;0.99;1" dur="18s" repeatCount="indefinite" />
+  </text>
+
+  <!-- Role 5 -->
+  <text x="10" y="30" class="typing-text">
+    ⚡ LLM Engineer
+    <animate attributeName="opacity" values="0;0;0;0;0;1;1;0" keyTimes="0;0.56;0.61;0.68;0.70;0.71;0.99;1" dur="18s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" values="0 15; 0 15; 0 15; 0 15; 0 15; 0 0; 0 0; 0 15" keyTimes="0;0.56;0.61;0.68;0.70;0.71;0.99;1" dur="18s" repeatCount="indefinite" />
+  </text>
+
+  <!-- Role 6 -->
+  <text x="10" y="30" class="typing-text">
+    ⚡ AI Agent Developer
+    <animate attributeName="opacity" values="0;0;0;0;0;0;1;1" keyTimes="0;0.70;0.75;0.82;0.84;0.85;0.99;1" dur="18s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" values="0 15; 0 15; 0 15; 0 15; 0 15; 0 15; 0 0; 0 15" keyTimes="0;0.70;0.75;0.82;0.84;0.85;0.99;1" dur="18s" repeatCount="indefinite" />
+  </text>
+
+  <!-- Role 7 -->
+  <text x="10" y="30" class="typing-text">
+    ⚡ Open Source Learner
+    <animate attributeName="opacity" values="1;0;0;0;0;0;0;1" keyTimes="0;0.02;0.84;0.85;0.96;0.97;0.98;1" dur="18s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -15; 0 15; 0 15; 0 15; 0 15; 0 15; 0 0" keyTimes="0;0.02;0.84;0.85;0.96;0.97;0.98;1" dur="18s" repeatCount="indefinite" />
+  </text>
+</svg>
