@@ -1,0 +1,92 @@
+<svg fill="none" viewBox="0 0 800 300" width="800" height="300" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .terminal-container {
+          background-color: #0d1117;
+          border: 1px solid #30363d;
+          border-radius: 10px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+          font-family: 'Fira Code', 'Courier New', Courier, monospace;
+          color: #c9d1d9;
+          padding: 0;
+          overflow: hidden;
+          width: 798px;
+          height: 298px;
+          box-sizing: border-box;
+        }
+        .terminal-header {
+          background-color: #161b22;
+          padding: 10px 16px;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #30363d;
+        }
+        .dot {
+          height: 12px;
+          width: 12px;
+          border-radius: 50%;
+          display: inline-block;
+          margin-right: 8px;
+        }
+        .dot-red { background-color: #ff5f56; }
+        .dot-yellow { background-color: #ffbd2e; }
+        .dot-green { background-color: #27c93f; }
+        .terminal-title {
+          color: #8b949e;
+          font-size: 13px;
+          margin-left: auto;
+          margin-right: auto;
+          font-weight: 500;
+        }
+        .terminal-body {
+          padding: 18px 20px;
+          font-size: 14px;
+          line-height: 1.6;
+        }
+        .prompt { color: #58a6ff; font-weight: bold; }
+        .cmd { color: #7ee787; }
+        .output { color: #c9d1d9; margin-bottom: 10px; }
+        .key { color: #79c0ff; }
+        .val { color: #a5d6ff; }
+        .str { color: #ff7b72; }
+        .cursor {
+          display: inline-block;
+          width: 8px;
+          height: 15px;
+          background-color: #58a6ff;
+          margin-left: 5px;
+          animation: blink 1s infinite;
+          vertical-align: middle;
+        }
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
+        }
+      </style>
+      <div class="terminal-container">
+        <div class="terminal-header">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="terminal-title">priyadharshini@dev-box:~</span>
+        </div>
+        <div class="terminal-body">
+          <div><span class="prompt">priya@dev-box:~$</span> <span class="cmd">whoami</span></div>
+          <div class="output">Priya Dharshini — Full-Stack Developer &amp; AI Engineer</div>
+          
+          <div><span class="prompt">priya@dev-box:~$</span> <span class="cmd">cat profile.json</span></div>
+          <div class="output">
+            {<br/>
+            &nbsp;&nbsp;<span class="key">"college"</span>: <span class="str">"Jaya Engineering College ('27)"</span>,<br/>
+            &nbsp;&nbsp;<span class="key">"focus"</span>: [<span class="str">"Full-Stack Web"</span>, <span class="str">"AI Agents"</span>, <span class="str">"System Design"</span>],<br/>
+            &nbsp;&nbsp;<span class="key">"status"</span>: <span class="str">"Building, learning &amp; shipping code 🚀"</span><br/>
+            }
+          </div>
+          
+          <div><span class="prompt">priya@dev-box:~$</span> <span class="cmd">npm run build-future</span><span class="cursor"></span></div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
