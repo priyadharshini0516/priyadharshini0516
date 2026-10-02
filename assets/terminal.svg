@@ -1,120 +1,77 @@
 <svg fill="none" viewBox="0 0 800 320" width="800" height="320" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        .terminal-container {
-          background-color: #0d1117;
-          border: 1.5px solid #30363d;
-          border-radius: 12px;
-          box-shadow: 0 8px 32px rgba(88, 166, 255, 0.15), 0 0 20px rgba(188, 140, 255, 0.1);
-          font-family: 'Fira Code', 'Courier New', Courier, monospace;
-          color: #c9d1d9;
-          padding: 0;
-          overflow: hidden;
-          width: 796px;
-          height: 316px;
-          box-sizing: border-box;
-          animation: glowPulse 4s ease-in-out infinite alternate;
-        }
-        @keyframes glowPulse {
-          0% { border-color: #30363d; box-shadow: 0 8px 32px rgba(88, 166, 255, 0.15); }
-          50% { border-color: #58a6ff; box-shadow: 0 8px 32px rgba(88, 166, 255, 0.3), 0 0 20px rgba(0, 229, 255, 0.2); }
-          100% { border-color: #bc8cff; box-shadow: 0 8px 32px rgba(188, 140, 255, 0.3), 0 0 20px rgba(188, 140, 255, 0.2); }
-        }
-        .terminal-header {
-          background: linear-gradient(90deg, #161b22 0%, #1c2128 100%);
-          padding: 11px 16px;
-          display: flex;
-          align-items: center;
-          border-bottom: 1px solid #30363d;
-        }
-        .dot {
-          height: 12px;
-          width: 12px;
-          border-radius: 50%;
-          display: inline-block;
-          margin-right: 8px;
-        }
-        .dot-red { background-color: #ff5f56; }
-        .dot-yellow { background-color: #ffbd2e; }
-        .dot-green { background-color: #27c93f; }
-        .terminal-title {
-          color: #8b949e;
-          font-size: 13px;
-          margin-left: auto;
-          margin-right: auto;
-          font-weight: 600;
-          letter-spacing: 0.5px;
-        }
-        .terminal-body {
-          padding: 20px 22px;
-          font-size: 14px;
-          line-height: 1.6;
-        }
-        .prompt { color: #58a6ff; font-weight: bold; }
-        .cmd { color: #7ee787; font-weight: 500; }
-        .output { color: #c9d1d9; margin-bottom: 12px; }
-        .key { color: #79c0ff; }
-        .str { color: #a5d6ff; }
-        .badge {
-          background: rgba(88, 166, 255, 0.15);
-          color: #58a6ff;
-          padding: 2px 8px;
-          border-radius: 4px;
-          font-size: 12px;
-          border: 1px solid rgba(88, 166, 255, 0.3);
-        }
-        .line-1 { animation: fadeIn 0.6s ease-out forwards; }
-        .line-2 { animation: fadeIn 0.6s ease-out 0.4s forwards; opacity: 0; }
-        .line-3 { animation: fadeIn 0.6s ease-out 0.8s forwards; opacity: 0; }
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(4px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .cursor {
-          display: inline-block;
-          width: 8px;
-          height: 16px;
-          background-color: #58a6ff;
-          margin-left: 6px;
-          animation: blink 1s infinite alternate;
-          vertical-align: middle;
-          border-radius: 1px;
-        }
-        @keyframes blink {
-          0% { opacity: 1; background-color: #58a6ff; }
-          100% { opacity: 0.2; background-color: #bc8cff; }
-        }
-      </style>
-      <div class="terminal-container">
-        <div class="terminal-header">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-          <span class="terminal-title">⚡ priyadharshini@dev-box:~</span>
-        </div>
-        <div class="terminal-body">
-          <div class="line-1">
-            <span class="prompt">priya@dev-box:~$</span> <span class="cmd">whoami</span>
-            <div class="output">Priya Dharshini — Full-Stack Developer &amp; AI Engineer <span class="badge">Jaya Eng. College '27</span></div>
-          </div>
-          
-          <div class="line-2">
-            <span class="prompt">priya@dev-box:~$</span> <span class="cmd">cat profile.json</span>
-            <div class="output">
-              {<br/>
-              &nbsp;&nbsp;<span class="key">"focus"</span>: [<span class="str">"Full-Stack Web"</span>, <span class="str">"AI Agents"</span>, <span class="str">"System Design"</span>],<br/>
-              &nbsp;&nbsp;<span class="key">"stack"</span>: [<span class="str">"React"</span>, <span class="str">"Next.js"</span>, <span class="str">"Node.js"</span>, <span class="str">"FastAPI"</span>, <span class="str">"Python"</span>],<br/>
-              &nbsp;&nbsp;<span class="key">"status"</span>: <span class="str">"Building, learning &amp; shipping code 🚀"</span><br/>
-              }
-            </div>
-          </div>
-          
-          <div class="line-3">
-            <span class="prompt">priya@dev-box:~$</span> <span class="cmd">npm run build-future</span><span class="cursor"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </foreignObject>
+  <style>
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5px; }
+    .header { fill: #161b22; }
+    .title { fill: #8b949e; font-family: 'Fira Code', monospace; font-size: 13px; font-weight: 600; }
+    .prompt { fill: #58a6ff; font-family: 'Fira Code', monospace; font-size: 14px; font-weight: bold; }
+    .cmd { fill: #7ee787; font-family: 'Fira Code', monospace; font-size: 14px; }
+    .txt { fill: #c9d1d9; font-family: 'Fira Code', monospace; font-size: 14px; }
+    .key { fill: #79c0ff; font-family: 'Fira Code', monospace; font-size: 14px; }
+    .str { fill: #a5d6ff; font-family: 'Fira Code', monospace; font-size: 14px; }
+    .badge-bg { fill: rgba(88, 166, 255, 0.15); stroke: rgba(88, 166, 255, 0.4); rx: 4px; }
+    .badge-txt { fill: #58a6ff; font-family: 'Fira Code', monospace; font-size: 11px; font-weight: bold; }
+    .cursor {
+      fill: #58a6ff;
+      animation: blink 1s infinite alternate;
+    }
+    @keyframes blink {
+      0% { opacity: 1; fill: #58a6ff; }
+      100% { opacity: 0.1; fill: #bc8cff; }
+    }
+    .terminal-border {
+      animation: borderGlow 4s ease-in-out infinite alternate;
+    }
+    @keyframes borderGlow {
+      0% { stroke: #30363d; }
+      50% { stroke: #58a6ff; }
+      100% { stroke: #bc8cff; }
+    }
+    .line-1 { animation: fadeIn 0.6s ease-out forwards; }
+    .line-2 { animation: fadeIn 0.6s ease-out 0.4s forwards; opacity: 0; }
+    .line-3 { animation: fadeIn 0.6s ease-out 0.8s forwards; opacity: 0; }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+
+  <!-- Container -->
+  <rect class="bg terminal-border" x="2" y="2" width="796" height="316" rx="12" />
+  
+  <!-- Header Bar -->
+  <path class="header" d="M2,14 C2,7.37 7.37,2 14,2 L786,2 C792.63,2 798,7.37 798,14 L798,40 L2,40 Z" />
+  <line x1="2" y1="40" x2="798" y2="40" stroke="#30363d" stroke-width="1" />
+
+  <!-- Control Dots -->
+  <circle cx="22" cy="21" r="6" fill="#ff5f56" />
+  <circle cx="42" cy="21" r="6" fill="#ffbd2e" />
+  <circle cx="62" cy="21" r="6" fill="#27c93f" />
+
+  <!-- Header Title -->
+  <text x="400" y="25" text-anchor="middle" class="title">⚡ priyadharshini@dev-box:~</text>
+
+  <!-- Body Content -->
+  <!-- Line 1 -->
+  <g class="line-1">
+    <text x="24" y="70" class="prompt">priya@dev-box:~$ <tspan class="cmd">whoami</tspan></text>
+    <text x="24" y="95" class="txt">Priya Dharshini — Full-Stack Developer &amp; AI Engineer</text>
+    <rect x="465" y="81" width="165" height="20" class="badge-bg" />
+    <text x="473" y="95" class="badge-txt">Jaya Eng. College '27</text>
+  </g>
+
+  <!-- Line 2 -->
+  <g class="line-2">
+    <text x="24" y="135" class="prompt">priya@dev-box:~$ <tspan class="cmd">cat profile.json</tspan></text>
+    <text x="24" y="160" class="txt">{</text>
+    <text x="40" y="182" class="txt"><tspan class="key">"focus"</tspan>: [<tspan class="str">"Full-Stack Web"</tspan>, <tspan class="str">"AI Agents"</tspan>, <tspan class="str">"System Design"</tspan>],</text>
+    <text x="40" y="204" class="txt"><tspan class="key">"stack"</tspan>: [<tspan class="str">"React"</tspan>, <tspan class="str">"Next.js"</tspan>, <tspan class="str">"Node.js"</tspan>, <tspan class="str">"FastAPI"</tspan>, <tspan class="str">"Python"</tspan>],</text>
+    <text x="40" y="226" class="txt"><tspan class="key">"status"</tspan>: <tspan class="str">"Building, learning &amp; shipping code 🚀"</tspan></text>
+    <text x="24" y="248" class="txt">}</text>
+  </g>
+
+  <!-- Line 3 -->
+  <g class="line-3">
+    <text x="24" y="285" class="prompt">priya@dev-box:~$ <tspan class="cmd">npm run build-future</tspan></text>
+    <rect x="362" y="271" width="9" height="17" class="cursor" />
+  </g>
 </svg>
