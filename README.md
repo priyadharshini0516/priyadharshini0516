@@ -22,7 +22,7 @@
 
 <!-- ═════════ ANIMATED TERMINAL ═════════ -->
 <div align="center">
-  <img src="./assets/terminal.svg" alt="terminal intro" width="820"/>
+  <img src="https://raw.githubusercontent.com/priyadharshini0516/priyadharshini0516/main/assets/terminal.svg" alt="terminal intro" width="820"/>
 </div>
 
 <br/>
