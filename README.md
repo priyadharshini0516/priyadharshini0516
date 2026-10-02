@@ -73,11 +73,7 @@
   <img height="180" src="https://streak-stats.demolab.com?user=priyadharshini0516&hide_border=true&background=0D1117&ring=58A6FF&fire=FF7B72&currStreakLabel=C9D1D9&sideLabels=C9D1D9&currStreakNum=58A6FF&sideNums=58A6FF&dates=8B949E" alt="streak"/>
 </div>
 
-<br/>
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=priyadharshini0516&theme=onedark&no-frame=true&no-bg=true&margin-w=8&column=7" alt="trophies"/>
-</div>
 
 <br/>
 
